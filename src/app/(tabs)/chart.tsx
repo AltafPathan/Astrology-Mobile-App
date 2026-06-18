@@ -62,12 +62,10 @@ export default function NatalChart() {
             style={{ width: WHEEL_SIZE + 32, height: WHEEL_SIZE + 32, alignItems: 'center', justifyContent: 'center' }}
           >
             <Svg width={WHEEL_SIZE} height={WHEEL_SIZE}>
-              {/* Outer boundary circle */}
               <Circle cx={CENTER} cy={CENTER} r={RADIUS} stroke={Colors.gold} strokeWidth="1" fill="transparent" opacity="0.3" />
               <Circle cx={CENTER} cy={CENTER} r={RADIUS - 40} stroke={Colors.gold} strokeWidth="1" strokeDasharray="3, 3" fill="transparent" opacity="0.15" />
               <Circle cx={CENTER} cy={CENTER} r={6} fill={Colors.gold} />
 
-              {/* Grid division lines */}
               {Array.from({ length: 6 }).map((_, i) => {
                 const angle = (i * 30 - 90) * (Math.PI / 180);
                 const x1 = CENTER + RADIUS * Math.cos(angle);
@@ -87,21 +85,18 @@ export default function NatalChart() {
                 );
               })}
 
-              {/* Sun Placements Plot */}
               <G>
                 <Line x1={CENTER} y1={CENTER} x2={sunCoords.x} y2={sunCoords.y} stroke={Colors.gold} strokeWidth="1" opacity="0.5" />
                 <Circle cx={sunCoords.x} cy={sunCoords.y} r={14} fill={Colors.bg} stroke={Colors.gold} strokeWidth="1.5" />
                 <SvgText x={sunCoords.x} y={sunCoords.y + 4} fontSize="11" textAnchor="middle" fill={Colors.gold}>☀️</SvgText>
               </G>
 
-              {/* Moon Placements Plot */}
               <G>
                 <Line x1={CENTER} y1={CENTER} x2={moonCoords.x} y2={moonCoords.y} stroke={Colors.gold} strokeWidth="1" opacity="0.5" />
                 <Circle cx={moonCoords.x} cy={moonCoords.y} r={14} fill={Colors.bg} stroke={Colors.gold} strokeWidth="1.5" />
                 <SvgText x={moonCoords.x} y={moonCoords.y + 4} fontSize="11" textAnchor="middle" fill={Colors.gold}>🌙</SvgText>
               </G>
 
-              {/* Rising Placements Plot */}
               <G>
                 <Line x1={CENTER} y1={CENTER} x2={risingCoords.x} y2={risingCoords.y} stroke={Colors.gold} strokeWidth="1" opacity="0.5" />
                 <Circle cx={risingCoords.x} cy={risingCoords.y} r={14} fill={Colors.bg} stroke={Colors.gold} strokeWidth="1.5" />

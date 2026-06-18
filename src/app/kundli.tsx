@@ -569,9 +569,7 @@ export default function KundliScreen() {
                 <Text className="text-astro-gold text-xs font-black uppercase tracking-widest mb-4">
                   North Indian Lagna Kundli (D1)
                 </Text>
-                <View className="bg-white/5 border border-white/15 rounded-3xl p-5 shadow-lg">
-                  <Svg width={280} height={280} viewBox="0 0 300 300">
-                    {/* SVG Filters */}
+                <View className="bg-white/5 border border-white/15 rounded-3xl p-5 shadow-lg">                  <Svg width={280} height={280} viewBox="0 0 300 300">
                     <Defs>
                       <RadialGradient id="svgGrad" cx="50%" cy="50%" rx="50%" ry="50%">
                         <Stop offset="0%" stopColor="#251758" stopOpacity="0.8" />
@@ -579,36 +577,27 @@ export default function KundliScreen() {
                       </RadialGradient>
                     </Defs>
                     
-                    {/* Inner chart base gradient */}
                     <Rect x={10} y={10} width={280} height={280} rx={16} fill="url(#svgGrad)" stroke={Colors.gold} strokeWidth={2} />
                     
-                    {/* North Indian Diamond Lines */}
-                    {/* Main Diagonals */}
                     <Line x1={10} y1={10} x2={290} y2={290} stroke={Colors.gold} strokeWidth={1.5} opacity={0.8} />
                     <Line x1={290} y1={10} x2={10} y2={290} stroke={Colors.gold} strokeWidth={1.5} opacity={0.8} />
                     
-                    {/* Inner Diamond Points (connect midpoints: (150,10), (10,150), (150,290), (290,150)) */}
                     <Polygon points="150,10 290,150 150,290 10,150" stroke={Colors.gold} strokeWidth={1.5} fill="none" opacity={0.9} />
 
-                    {/* Small center circle for focal energy */}
                     <Circle cx={150} cy={150} r={4} fill={Colors.gold} opacity={0.5} />
 
-                    {/* Render sign numbers & planets coordinates */}
                     {Object.keys(houseCoordinates).map((houseStr) => {
                       const H = parseInt(houseStr, 10);
                       const coords = houseCoordinates[H];
                       
-                      // Calculate sign index (1-12) placing Lagna in 1st house
                       const lagnaIdx = ZodiacSigns.findIndex(s => s.id === getRisingSign(birthDate, birthTime).id);
                       const signNum = ((lagnaIdx + H - 1) % 12) + 1;
                       
-                      // Get planets inside this house
                       const planets = reportData.housePlanets[H] || [];
                       const planetsStr = planets.join(' ');
-
+ 
                       return (
                         <React.Fragment key={H}>
-                          {/* House Sign Number */}
                           <SvgText
                             x={coords.signX}
                             y={coords.signY}
@@ -619,7 +608,6 @@ export default function KundliScreen() {
                           >
                             {signNum}
                           </SvgText>
-                          {/* Planets text symbol list */}
                           {planetsStr.length > 0 && (
                             <SvgText
                               x={coords.planetX}

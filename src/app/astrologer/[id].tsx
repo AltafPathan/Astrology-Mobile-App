@@ -207,7 +207,7 @@ export default function AstrologerDetails() {
         <Text className="text-white font-extrabold text-sm uppercase tracking-widest">
           Consultation Guide
         </Text>
-        <View className="w-10 h-10" /> {/* Spacer */}
+        <View className="w-10 h-10" />
       </View>
 
       <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{ paddingBottom: 110 }}>
@@ -221,13 +221,11 @@ export default function AstrologerDetails() {
               </RadialGradient>
             </Defs>
             <Rect width="100%" height="100%" fill="url(#bannerGrad)" />
-            {/* Celestial stars graphics */}
             <Circle cx="20" cy="30" r="0.5" fill="#FFFFFF" opacity="0.6" />
             <Circle cx="80" cy="40" r="0.8" fill="#FFFFFF" opacity="0.8" />
             <Circle cx="45" cy="20" r="0.3" fill="#FFFFFF" opacity="0.5" />
             <Circle cx="70" cy="70" r="0.6" fill={Colors.gold} opacity="0.5" />
             
-            {/* Constellation line links */}
             <Path d="M 20 30 L 30 50 L 45 20" stroke="rgba(255,255,255,0.15)" strokeWidth="0.3" fill="none" />
             <Path d="M 80 40 L 70 70 L 90 60" stroke="rgba(244,201,93,0.15)" strokeWidth="0.3" fill="none" />
           </Svg>

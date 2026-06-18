@@ -90,7 +90,7 @@ export default function HoroscopeDetail() {
         <Text className="text-white font-extrabold text-lg uppercase tracking-wider">
           Sign Forecast
         </Text>
-        <View className="w-10 h-10" /> {/* Spacer */}
+        <View className="w-10 h-10" />
       </View>
 
       <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{ paddingBottom: 48 }}>
