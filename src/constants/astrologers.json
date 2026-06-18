@@ -1,0 +1,67 @@
+[
+  {
+    "id": "1",
+    "name": "Acharya Shreya",
+    "rating": 4.9,
+    "reviewCount": 312,
+    "experience": 12,
+    "languages": ["English", "Hindi", "Bengali"],
+    "expertise": ["Vedic", "Numerology", "Kundli"],
+    "ratePerMinute": 20,
+    "photoUrl": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=300&auto=format&fit=crop",
+    "isOnline": true,
+    "bio": "Acharya Shreya is a certified Vedic astrologer with over 12 years of experience. She specializes in career growth, relationships, and kundli matching. Her predictions are practical and focus on providing easy remedies to align your planets."
+  },
+  {
+    "id": "2",
+    "name": "Dr. Aditya Sen",
+    "rating": 4.8,
+    "reviewCount": 194,
+    "experience": 15,
+    "languages": ["English", "Hindi"],
+    "expertise": ["Vedic", "Vastu", "Palmistry"],
+    "ratePerMinute": 25,
+    "photoUrl": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=300&auto=format&fit=crop",
+    "isOnline": true,
+    "bio": "Dr. Aditya Sen holds a PhD in Astrological Sciences and has guided thousands of individuals globally. He provides deep cosmic analysis regarding business expansions, health forecasting, and Vastu rectifications for home and office environments."
+  },
+  {
+    "id": "3",
+    "name": "Tarot Kiara",
+    "rating": 4.7,
+    "reviewCount": 245,
+    "experience": 6,
+    "languages": ["English", "Spanish"],
+    "expertise": ["Tarot", "Psychic", "Love Synastry"],
+    "ratePerMinute": 15,
+    "photoUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=300&auto=format&fit=crop",
+    "isOnline": false,
+    "bio": "Kiara is a highly intuitive Tarot reader and spiritual life coach. She reads energies to provide clarity on love, relationship blocks, and future pathways. Her readings are empathetic, non-judgmental, and deeply healing."
+  },
+  {
+    "id": "4",
+    "name": "Rohan Shastri",
+    "rating": 4.85,
+    "reviewCount": 156,
+    "experience": 9,
+    "languages": ["Hindi", "Gujarati", "Marathi"],
+    "expertise": ["Vedic", "Numerology", "Gemology"],
+    "ratePerMinute": 18,
+    "photoUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=300&auto=format&fit=crop",
+    "isOnline": true,
+    "bio": "Rohan Shastri comes from a lineage of traditional astrologers. He combines Vedic principles with Numerology to suggest lucky names, gemstones, and timing configurations (Muhurats) for weddings, major investments, and child birth alignments."
+  },
+  {
+    "id": "5",
+    "name": "Mystic Elena",
+    "rating": 4.95,
+    "reviewCount": 408,
+    "experience": 10,
+    "languages": ["English", "French", "German"],
+    "expertise": ["Tarot", "Numerology", "Dream Interpretation"],
+    "ratePerMinute": 22,
+    "photoUrl": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=300&auto=format&fit=crop",
+    "isOnline": true,
+    "bio": "Mystic Elena offers a modern blend of Western Astrology, Tarot, and Numerology. With 10 years of professional practice, she excels in revealing life purpose alignments, resolving relationship dynamics, and decoding dream symbolism."
+  }
+]
